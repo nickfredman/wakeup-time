@@ -27,9 +27,25 @@
     color: #aaa;
 }
 
+.inner-shell p {
+    position: absolute;
+    z-index: 100;
+}
+
+.inner-shell > .auto {
+    left: 16px;
+    top: 106px;
+}
+
+.inner-shell > .pm {
+    left: 35px;
+    top: 52px;
+
+}
+
 .clock-screen {
     position: absolute;
-    left: 45px;
+    left: 65px;
     top: 40px;
     background: #7E240B;
     border-radius: 6px;
@@ -37,7 +53,13 @@
 }
 
 .clock-indicator {
-
+    border-radius: 50%;
+    background: #C0392B;
+    position: absolute;
+    top: 80px;
+    left: 6px;
+    height: 1em;
+    width: 1em;
 }
 
 .clock-text {
@@ -45,16 +67,42 @@
     font-size: 100px;
     color: #FD4B46;
     letter-spacing: 10px;
-    padding: 25px 5px 5px 40px;
+    padding: 25px 0 0 30px;
     margin: 0;
     line-height: 1em;
 
 }
 
 .bottom-am {
-
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    width: 100%;
 }
 
 .bottom-fm {
+    position: absolute;
+    top: 180px;
+    left: 110px;
+    width: 100%;
 
+}
+
+.slider {
+    position: absolute;
+    width: 200px;
+    height: 8px;
+    top: 213px;
+    left: 121px;
+    background: #bbb;
+    border-radius: 10px;
+}
+
+.slider div {
+    width: 15px;
+    border-radius: 45%;
+    height: 10px;
+    background: #666;
+    margin-top: -1px;
+    margin-left: 20px;
 }
